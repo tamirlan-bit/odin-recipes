@@ -3,56 +3,43 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Odin Pizza Recipes</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+      body { background: #FFF8E1; color: #333; text-align: center; font-family: Arial, sans-serif; }
+      header { background: #D32F2F; color: white; padding: 20px; border-radius: 10px; }
+      ul { list-style: none; padding: 0; }
+      li { background: white; padding: 15px; margin: 20px auto; border-radius: 10px; width: 60%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+      a { color: #D32F2F; font-size: 1.5rem; font-weight: bold; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      img { border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-top: 10px; width: 100%; max-width: 500px; height: auto; }
+      figcaption { color: #777; margin-top: 10px; }
+      footer { background: #FFC107; color: #333; padding: 10px; margin-top: 20px; }
+    </style>
   </head>
-  <body style="background-color: #FFF8E1; color: #333; text-align: center;">
-    <header style="background-color: #D32F2F; color: white; padding: 20px; border-radius: 10px;">
-      <h1 style="margin: 0;">🍕 Odin Pizza Recipes 🍕</h1>
-    </header>
-
+  <body>
+    <header><h1>🍕 Odin Pizza Recipes 🍕</h1></header>
     <main>
-      <section>
-        <ul style="list-style: none; padding: 0;">
-          <li style="background-color: white; padding: 15px; margin: 20px auto; border-radius: 10px; width: 60%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-            <figure style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <a href="recipes/pizza.html" style="color: #D32F2F; font-size: 1.5rem; font-weight: bold; text-decoration: none;">
-                  New York Pizza Recipe
-                </a>
-                <img src="https://images.unsplash.com/photo-1544982503-9f984c14501a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                     alt="New York-style pizza" height="300" 
-                     style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-top: 10px;">
-                <figcaption style="color: #777;">Thin crust, cheesy, and delicious!</figcaption>
-              </figure>
-          </li>
-
-          <li style="background-color: white; padding: 15px; margin: 20px auto; border-radius: 10px; width: 60%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-            <figure style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-              <a href="recipes/neapolitan-pizza.html" style="color: #D32F2F; font-size: 1.5rem; font-weight: bold; text-decoration: none;">Neapolitan Pizza Recipe</a>
-              <img src="https://plus.unsplash.com/premium_photo-1691911162192-f4a5cd1b7403?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                   alt="Neapolitan pizza" height="300" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-              <figcaption style="color: #777;">Soft crust, simple ingredients, perfection.</figcaption>
-            </figure>
-          </li>
-
-          <li style="background-color: white; padding: 15px; margin: 20px auto; border-radius: 10px; width: 60%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-            <figure style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-              <a href="recipes/fried-pizza.html" style="color: #D32F2F; font-size: 1.5rem; font-weight: bold; text-decoration: none;">Fried Pizza Recipe</a>
-              <img src="https://images.unsplash.com/photo-1525518392674-39ba1fca2ec2?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                   alt="Fried pizza" height="300" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-              <figcaption style="color: #777;">Golden, crispy, and unique!</figcaption>
-            </figure>
-          </li>
-        </ul>
-      </section>
+      <ul>
+        <li>
+          <a href="recipes/pizza.html">New York Pizza Recipe</a>
+          <img src="https://images.unsplash.com/photo-1544982503-9f984c14501a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+               alt="New York-style pizza" width="774" height="200">
+          <figcaption>Thin crust, cheesy, and delicious!</figcaption>
+        </li>
+        <li>
+          <a href="recipes/neapolitan-pizza.html">Neapolitan Pizza Recipe</a>
+          <img src="https://plus.unsplash.com/premium_photo-1691911162192-f4a5cd1b7403?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+               alt="Neapolitan pizza" width="774" height="200">
+          <figcaption>Soft crust, simple ingredients, perfection.</figcaption>
+        </li>
+        <li>
+          <a href="recipes/fried-pizza.html">Fried Pizza Recipe</a>
+          <img src="https://images.unsplash.com/photo-1525518392674-39ba1fca2ec2?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+               alt="Fried pizza" width="774" height="200">
+          <figcaption>Golden, crispy, and unique!</figcaption>
+        </li>
+      </ul>
     </main>
-
-    <footer style="background-color: #FFC107; color: #333; padding: 10px; margin-top: 20px;">
-      <p>&copy; Web Recipes. Non rights reserved.</p>
-    </footer>
-
-    <script src="index.js"></script>
+    <footer><p>&copy; Web Recipes. Non rights reserved.</p></footer>
   </body>
 </html>
